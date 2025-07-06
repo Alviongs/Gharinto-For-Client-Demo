@@ -10,6 +10,7 @@ import MaterialCatalog from './MaterialCatalog';
 import ClientManagement from './ClientManagement';
 import DesignStudio from './DesignStudio';
 import BusinessAnalytics from './BusinessAnalytics';
+import Chat from './Chat';
 import { useAuth } from '../../App';
 
 function DesignerDashboard() {
@@ -28,8 +29,8 @@ function DesignerDashboard() {
         return <BOQGenerator />;
       case 'portfolio':
         return <PortfolioManagement />;
-      case 'earnings':
-        return <DigitalWallet />;
+      case 'chat':
+        return <Chat />;
       case 'materials':
         return <MaterialCatalog />;
       case 'clients':

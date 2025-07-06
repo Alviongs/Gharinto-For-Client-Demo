@@ -6,6 +6,7 @@ function VendorManagement() {
 
   return (
     <div className="vendor-management">
+      {showVendorForm && <VendorForm onClose={() => setShowVendorForm(false)} />}
       <h3 className="text-2xl font-semibold mb-6">Vendor Management</h3>
       <div className="bg-white p-6 rounded-lg shadow-md">
         <div className="mb-4 flex justify-between items-center">

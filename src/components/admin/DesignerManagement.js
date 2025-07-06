@@ -6,6 +6,7 @@ function DesignerManagement() {
 
   return (
     <div className="designer-management">
+      {showDesignerForm && <DesignerForm onClose={() => setShowDesignerForm(false)} />}
       <h3 className="text-2xl font-semibold mb-6">Designer Management</h3>
       <div className="bg-white p-6 rounded-lg shadow-md">
         <table className="w-full table-auto">

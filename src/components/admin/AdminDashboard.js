@@ -57,8 +57,8 @@ function AdminDashboard() {
         return <PortfolioManagement />;
       case 'team':
         return <TeamManagement />;
-      case 'settings':
-        return <SystemSettings />;
+      case 'calendar':
+        return <Calendar />;
       default:
         return <DashboardOverview />;
     }

@@ -6,6 +6,7 @@ function TeamManagement() {
 
   return (
     <div className="team-management">
+      {showTeamMemberForm && <TeamMemberForm onClose={() => setShowTeamMemberForm(false)} />}
       <h3 className="text-2xl font-semibold mb-6">Team Management</h3>
       <div className="bg-white p-6 rounded-lg shadow-md">
         <table className="w-full table-auto">

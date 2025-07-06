@@ -24,6 +24,7 @@ function TransactionManagement() {
 
   return (
     <div className="transaction-management">
+      {showTransactionForm && <TransactionForm onClose={() => setShowTransactionForm(false)} />}
       <h3 className="text-2xl font-semibold mb-6">Transaction Management</h3>
       
       {/* Transaction Statistics */}

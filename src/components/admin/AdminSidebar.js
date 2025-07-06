@@ -18,7 +18,7 @@ function AdminSidebar({ activePage, setActivePage }) {
     { id: 'services', label: 'Service Management', icon: 'fas fa-concierge-bell' },
     { id: 'portfolio', label: 'Portfolio Showcase', icon: 'fas fa-images' },
     { id: 'team', label: 'Team Management', icon: 'fas fa-users-cog' },
-    { id: 'settings', label: 'System Settings', icon: 'fas fa-cog' },
+    { id: 'calendar', label: 'Calendar', icon: 'fas fa-calendar-alt' },
   ];
 
   return (

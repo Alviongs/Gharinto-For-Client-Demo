@@ -6,6 +6,7 @@ function ProjectManagement() {
 
   return (
     <div className="project-management">
+      {showProjectForm && <ProjectForm onClose={() => setShowProjectForm(false)} />}
       <h3 className="text-2xl font-semibold mb-6">Project Management</h3>
       <div className="bg-white p-6 rounded-lg shadow-md">
         <table className="w-full table-auto">

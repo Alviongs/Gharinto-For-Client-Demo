@@ -10,7 +10,7 @@ function PMSidebar({ activePage, setActivePage }) {
     { id: 'procurement', label: 'Procurement & Logistics', icon: 'fas fa-dolly' },
     { id: 'quality', label: 'Quality Control', icon: 'fas fa-check-circle' },
     { id: 'resources', label: 'Resource Management', icon: 'fas fa-users-cog' },
-    { id: 'reports', label: 'Project Reports', icon: 'fas fa-chart-bar' },
+    { id: 'kanban', label: 'Kanban Board', icon: 'fas fa-columns' },
     { id: 'communication', label: 'Team Communication', icon: 'fas fa-comments' },
     { id: 'milestones', label: 'Milestone Tracking', icon: 'fas fa-flag-checkered' },
   ];

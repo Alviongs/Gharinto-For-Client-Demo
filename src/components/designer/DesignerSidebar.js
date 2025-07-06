@@ -8,7 +8,7 @@ function DesignerSidebar({ activePage, setActivePage }) {
     { id: 'projects', label: 'My Projects', icon: 'fas fa-paint-brush' },
     { id: 'boq', label: 'BOQ Generator', icon: 'fas fa-file-invoice-dollar' },
     { id: 'portfolio', label: 'Portfolio Showcase', icon: 'fas fa-images' },
-    { id: 'earnings', label: 'Digital Wallet', icon: 'fas fa-wallet' },
+    { id: 'chat', label: 'Chat', icon: 'fas fa-comments' },
     { id: 'materials', label: 'Material Catalog', icon: 'fas fa-boxes' },
     { id: 'clients', label: 'Client Management', icon: 'fas fa-users' },
     { id: 'designs', label: 'Design Studio', icon: 'fas fa-drafting-compass' },

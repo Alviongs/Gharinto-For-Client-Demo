@@ -3,10 +3,12 @@ import React from 'react';
 
 function ProcurementSidebar({ activePage, setActivePage }) {
   const menuItems = [
-    { id: 'overview', label: 'Dashboard', icon: 'fas fa-tachometer-alt' },
-    { id: 'inventory', label: 'Inventory', icon: 'fas fa-boxes' },
-    { id: 'orders', label: 'Orders', icon: 'fas fa-dolly-flatbed' },
-    { id: 'vendors', label: 'Vendors', icon: 'fas fa-store' },
+    { id: 'overview', label: 'Procurement Dashboard', icon: 'fas fa-tachometer-alt' },
+    { id: 'inventory', label: 'Inventory Management', icon: 'fas fa-boxes' },
+    { id: 'orders', label: 'Purchase Orders', icon: 'fas fa-file-invoice' },
+    { id: 'vendors', label: 'Vendor Coordination', icon: 'fas fa-handshake' },
+    { id: 'quality', label: 'Quality Control', icon: 'fas fa-check-circle' },
+    { id: 'logistics', label: 'Logistics Tracking', icon: 'fas fa-truck' },
   ];
 
   return (

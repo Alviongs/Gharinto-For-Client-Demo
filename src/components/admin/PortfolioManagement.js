@@ -2,7 +2,7 @@ import React from 'react';
 import { SAMPLE_DATA } from '../../sampleData';
 
 function PortfolioManagement() {
-  const { portfolioItems } = SAMPLE_DATA;
+  const [showPortfolioForm, setShowPortfolioForm] = useState(false);
 
   return (
     <div className="portfolio-management">

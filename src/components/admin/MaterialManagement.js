@@ -6,6 +6,7 @@ function MaterialManagement() {
 
   return (
     <div className="material-management">
+      {showMaterialForm && <MaterialForm onClose={() => setShowMaterialForm(false)} />}
       <h3 className="text-2xl font-semibold mb-6">Material Management</h3>
       <div className="bg-white p-6 rounded-lg shadow-md">
         <table className="w-full table-auto">

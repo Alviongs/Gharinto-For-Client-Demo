@@ -38,8 +38,14 @@ function UserManagement() {
 
   return (
     <div className="user-management">
+      {showUserForm && <UserForm onClose={() => setShowUserForm(false)} />}
       <div className="flex justify-between items-center mb-6">
-        <h3 className="text-2xl font-semibold">User Management & Administration</h3>
+        <div className="flex justify-between items-center mb-6">
+        <h3 className="text-2xl font-semibold">User Management</h3>
+        <button onClick={() => setShowUserForm(true)} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+          Add User
+        </button>
+      </div>
         <div className="flex space-x-4">
           <button 
             onClick={() => setShowAddModal(true)}

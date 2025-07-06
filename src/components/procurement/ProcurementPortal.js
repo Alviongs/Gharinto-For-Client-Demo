@@ -5,6 +5,8 @@ import ProcurementOverview from './ProcurementOverview';
 import InventoryManagement from './InventoryManagement';
 import OrderManagement from './OrderManagement';
 import VendorManagement from './VendorManagement';
+import QualityControl from './QualityControl';
+import LogisticsTracking from './LogisticsTracking';
 import { useAuth } from '../../App';
 
 function ProcurementPortal() {
@@ -21,6 +23,10 @@ function ProcurementPortal() {
         return <OrderManagement />;
       case 'vendors':
         return <VendorManagement />;
+      case 'quality':
+        return <QualityControl />;
+      case 'logistics':
+        return <LogisticsTracking />;
       default:
         return <ProcurementOverview />;
     }

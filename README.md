@@ -1,74 +1,107 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+ # Gharinto Platform - Client Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A three-sided marketplace for India’s home interiors and renovation projects, connecting homeowners, interior designers, material suppliers, and project managers in one unified ecosystem.
 
-## Available Scripts
+## 🚀 Tech Stack
 
-In the project directory, you can run:
+- React (Create React App with CRACO)
+- Tailwind CSS
+- PostCSS & Autoprefixer
+- React Router
+- JavaScript (ES6+)
 
-### `npm start`
+## 📂 Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+frontend/
+├─ public/
+│  └─ index.html             # Static HTML template
+├─ src/
+│  ├─ components/           # Reusable UI components organized by role
+│  ├─ App.js                # Root component with application routing
+│  ├─ index.js              # Application entry point
+│  └─ sampleData.js         # Mock data for dashboard demos
+├─ craco.config.js          # CRA override configuration
+├─ postcss.config.js        # PostCSS setup
+├─ tailwind.config.js       # Tailwind CSS configuration
+├─ package.json             # Project metadata and scripts
+└─ .gitignore               # Git ignore patterns
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⚙️ Installation & Development
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```powershell
+git clone https://github.com/Alviongs/Gharinto-For-Client-Demo.git
+cd Gharinto-For-Client-Demo/frontend
+```
 
-### `npm run build`
+2. Install dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```powershell
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```powershell
+npm start
+```
 
-### `npm run eject`
+4. Open the app in your browser:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+http://localhost:3000
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ✅ Completed Dashboards
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Project Manager Dashboard**: 100% — Gantt charts, budget tracking, procurement, quality control, and more
+- **Designer Dashboard**: 95% — Lead marketplace, BOQ generator, portfolio showcase, digital wallet, analytics
+- **Admin Dashboard**: 90% — User & vendor management, communication hub, system settings (Service & Portfolio modules pending)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ⚠️ In Progress
 
-## Learn More
+- **Vendor Portal**: 70% — Inventory management, order processing, vendor financials
+- **Procurement Portal**: 60% — Advanced inventory analytics, purchase order automation
+- **Customer Portal**: 40% — Project overview, document vault, payment integration, feedback system
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📦 Production Build & Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Build for production:
 
-### Code Splitting
+```powershell
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Deploy the contents of the `build/` folder to any static hosting service (Netlify, Vercel, GitHub Pages).
 
-### Analyzing the Bundle Size
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions are welcome! Follow these steps:
 
-### Making a Progressive Web App
+1. Fork the repository
+2. Create a feature branch:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```powershell
+git checkout -b feature/YourFeature
+```
 
-### Advanced Configuration
+3. Commit your changes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```powershell
+git commit -m "feat: Describe your feature"
+```
 
-### Deployment
+4. Push to your branch:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```powershell
+git push origin feature/YourFeature
+```
 
-### `npm run build` fails to minify
+5. Open a Pull Request on GitHub.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# Gharinto-For-Client-Demo
->>>>>>> b48ee7151ec1c2938fa9a4b7ecff9502d759a7cf
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

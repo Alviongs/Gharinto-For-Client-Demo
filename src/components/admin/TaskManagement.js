@@ -25,6 +25,7 @@ function TaskManagement() {
 
   return (
     <div className="task-management">
+      {showTaskForm && <TaskForm onClose={() => setShowTaskForm(false)} />}
       <h3 className="text-2xl font-semibold mb-6">Task Management</h3>
       
       {/* Task Statistics */}

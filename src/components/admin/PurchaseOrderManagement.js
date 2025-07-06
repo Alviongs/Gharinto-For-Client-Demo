@@ -25,6 +25,7 @@ function PurchaseOrderManagement() {
 
   return (
     <div className="purchase-order-management">
+      {showPurchaseOrderForm && <PurchaseOrderForm onClose={() => setShowPurchaseOrderForm(false)} />}
       <h3 className="text-2xl font-semibold mb-6">Purchase Order Management</h3>
       
       {/* PO Statistics */}

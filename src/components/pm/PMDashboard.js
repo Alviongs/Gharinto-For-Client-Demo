@@ -11,6 +11,7 @@ import QualityControl from './QualityControl';
 import ResourceManagement from './ResourceManagement';
 import ProjectReports from './ProjectReports';
 import MilestoneTracking from './MilestoneTracking';
+import KanbanBoard from './KanbanBoard';
 import { useAuth } from '../../App';
 
 function PMDashboard() {
@@ -33,8 +34,8 @@ function PMDashboard() {
         return <QualityControl />;
       case 'resources':
         return <ResourceManagement />;
-      case 'reports':
-        return <ProjectReports />;
+      case 'kanban':
+        return <KanbanBoard />;
       case 'communication':
         return <InternalCommunication />;
       case 'milestones':

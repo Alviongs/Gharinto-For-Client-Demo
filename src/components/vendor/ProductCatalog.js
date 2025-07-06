@@ -6,6 +6,7 @@ function ProductCatalog() {
   
   return (
     <div className="product-catalog">
+      {showProductForm && <ProductForm onClose={() => setShowProductForm(false)} />}
       <h3 className="text-2xl font-semibold mb-6">Product Catalog Management</h3>
       
       <div className="bg-white p-6 rounded-lg shadow-md">

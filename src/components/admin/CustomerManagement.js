@@ -6,6 +6,8 @@ function CustomerManagement() {
 
   return (
     <div className="customer-management">
+      {showCustomerForm && <CustomerForm onClose={() => setShowCustomerForm(false)} />}
+      {showCustomerForm && <CustomerForm onClose={() => setShowCustomerForm(false)} />}
       <h3 className="text-2xl font-semibold mb-6">Customer Management</h3>
       <div className="bg-white p-6 rounded-lg shadow-md">
         <table className="w-full table-auto">
