@@ -1,0 +1,125 @@
+
+// Enhanced Roles and Permissions - Aligned with SRS Requirements
+export const ROLES = {
+  ADMIN: 'admin',
+  PM: 'pm',
+  CUSTOMER: 'customer',
+  DESIGNER: 'designer',
+  PROCUREMENT: 'procurement',
+  VENDOR: 'vendor'
+};
+
+export const PERMISSIONS = {
+  // Admin Permissions - "Control Tower"
+  FULL_ACCESS: 'full_access',
+  USER_MANAGEMENT: 'user_management',
+  LEAD_ASSIGNMENT: 'lead_assignment',
+  FINANCIAL_OVERSIGHT: 'financial_oversight',
+  SYSTEM_CONFIG: 'system_config',
+  CONTENT_MANAGEMENT: 'content_management',
+  PARTNER_ONBOARDING: 'partner_onboarding',
+  COMMISSION_MANAGEMENT: 'commission_management',
+
+  // PM Permissions - "Execution Engine"
+  MANAGE_PROJECTS: 'manage_projects',
+  VIEW_PROJECTS: 'view_projects',
+  GANTT_MANAGEMENT: 'gantt_management',
+  PROCUREMENT_COORDINATION: 'procurement_coordination',
+  BUDGET_TRACKING: 'budget_tracking',
+  TASK_MANAGEMENT: 'task_management',
+  INTERNAL_COMMUNICATION: 'internal_communication',
+  RAISE_PURCHASE_ORDERS: 'raise_purchase_orders',
+
+  // Customer Permissions - "Window of Transparency"
+  VIEW_OWN_PROJECTS: 'view_own_projects',
+  MAKE_PAYMENTS: 'make_payments',
+  ACCESS_DOCUMENTS: 'access_documents',
+  TRACK_PROGRESS: 'track_progress',
+  COMMUNICATE_TEAM: 'communicate_team',
+  PROVIDE_FEEDBACK: 'provide_feedback',
+  DOWNLOAD_WARRANTY: 'download_warranty',
+
+  // Designer Permissions - "Creative Business Suite"
+  MANAGE_DESIGNS: 'manage_designs',
+  VIEW_LEADS: 'view_leads',
+  ACCEPT_LEADS: 'accept_leads',
+  MANAGE_WALLET: 'manage_wallet',
+  BOQ_GENERATOR: 'boq_generator',
+  ECOMMERCE_ACCESS: 'ecommerce_access',
+  DESIGN_COLLABORATION: 'design_collaboration',
+  CLIENT_PRESENTATION: 'client_presentation',
+
+  // Procurement Permissions
+  MANAGE_INVENTORY: 'manage_inventory',
+  VIEW_VENDORS: 'view_vendors',
+  MANAGE_PURCHASE_ORDERS: 'manage_purchase_orders',
+  TRACK_DELIVERIES: 'track_deliveries',
+  VENDOR_COORDINATION: 'vendor_coordination',
+
+  // Vendor Permissions - "Supply Chain Hub"
+  MANAGE_CATALOG: 'manage_catalog',
+  INVENTORY_CONTROL: 'inventory_control',
+  ORDER_MANAGEMENT: 'order_management',
+  ORDER_FULFILLMENT: 'order_fulfillment',
+  VENDOR_FINANCIALS: 'vendor_financials',
+  PRODUCT_LISTINGS: 'product_listings'
+};
+
+export const ROLE_PERMISSIONS = {
+  [ROLES.ADMIN]: [
+    PERMISSIONS.FULL_ACCESS,
+    PERMISSIONS.USER_MANAGEMENT,
+    PERMISSIONS.LEAD_ASSIGNMENT,
+    PERMISSIONS.FINANCIAL_OVERSIGHT,
+    PERMISSIONS.SYSTEM_CONFIG,
+    PERMISSIONS.CONTENT_MANAGEMENT,
+    PERMISSIONS.PARTNER_ONBOARDING,
+    PERMISSIONS.COMMISSION_MANAGEMENT,
+    PERMISSIONS.MANAGE_PROJECTS,
+    PERMISSIONS.MANAGE_INVENTORY
+  ],
+  [ROLES.PM]: [
+    PERMISSIONS.MANAGE_PROJECTS,
+    PERMISSIONS.VIEW_PROJECTS,
+    PERMISSIONS.GANTT_MANAGEMENT,
+    PERMISSIONS.PROCUREMENT_COORDINATION,
+    PERMISSIONS.BUDGET_TRACKING,
+    PERMISSIONS.TASK_MANAGEMENT,
+    PERMISSIONS.INTERNAL_COMMUNICATION,
+    PERMISSIONS.RAISE_PURCHASE_ORDERS
+  ],
+  [ROLES.CUSTOMER]: [
+    PERMISSIONS.VIEW_OWN_PROJECTS,
+    PERMISSIONS.MAKE_PAYMENTS,
+    PERMISSIONS.ACCESS_DOCUMENTS,
+    PERMISSIONS.TRACK_PROGRESS,
+    PERMISSIONS.COMMUNICATE_TEAM,
+    PERMISSIONS.PROVIDE_FEEDBACK,
+    PERMISSIONS.DOWNLOAD_WARRANTY
+  ],
+  [ROLES.DESIGNER]: [
+    PERMISSIONS.MANAGE_DESIGNS,
+    PERMISSIONS.VIEW_LEADS,
+    PERMISSIONS.ACCEPT_LEADS,
+    PERMISSIONS.MANAGE_WALLET,
+    PERMISSIONS.BOQ_GENERATOR,
+    PERMISSIONS.ECOMMERCE_ACCESS,
+    PERMISSIONS.DESIGN_COLLABORATION,
+    PERMISSIONS.CLIENT_PRESENTATION
+  ],
+  [ROLES.PROCUREMENT]: [
+    PERMISSIONS.MANAGE_INVENTORY,
+    PERMISSIONS.VIEW_VENDORS,
+    PERMISSIONS.MANAGE_PURCHASE_ORDERS,
+    PERMISSIONS.TRACK_DELIVERIES,
+    PERMISSIONS.VENDOR_COORDINATION
+  ],
+  [ROLES.VENDOR]: [
+    PERMISSIONS.MANAGE_CATALOG,
+    PERMISSIONS.INVENTORY_CONTROL,
+    PERMISSIONS.ORDER_MANAGEMENT,
+    PERMISSIONS.ORDER_FULFILLMENT,
+    PERMISSIONS.VENDOR_FINANCIALS,
+    PERMISSIONS.PRODUCT_LISTINGS
+  ]
+};
